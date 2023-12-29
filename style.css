@@ -32,8 +32,12 @@ strong
     text-shadow: #000 2px 2px 0.2rem;
     color: aliceblue;
 }
-
-    
+#eu
+{
+float: right;
+line-height: 1%;
+text-align: right;
+}
 
 #indice
 {
