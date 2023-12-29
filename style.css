@@ -1,0 +1,43 @@
+#tittlehi
+{
+    line-height: 20%;
+}
+#esp
+{
+    line-height: 20%; 
+}
+body
+{
+    text-align: justify;
+    background-color: black;
+    color:aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+}
+a
+{
+color: rgb(46, 155, 192);
+}
+strong
+{
+    font-size:110%;
+}
+.logo
+{
+    background: center / cover url(./img/logohtml.png);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: #000 2px 2px 0.2rem;
+    color: aliceblue;
+}
+
+    
+
+#indice
+{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}

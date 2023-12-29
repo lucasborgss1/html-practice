@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Define o conjunto de caracteres do Documento.-->
+    <meta name="Sobre HTML" content="Destrinchando o HTML."><!--Fornece uma breve explicação do conteúdo da página.-->
+    <meta name="Autor" content="Lucas de Almeida Borges">
+    <title>Aprendendo HTML</title><!--Define o título da Página, exibido na barra de título no navegador.-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logohtml.png" type="image/x-icon"> <!--Ícones pequenos exibidos na aba do navegador-->
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Aprendendo HTML</h1>
+      </header>
+
+    
+      <div id="indice">
+        <h4>ÍNDICE:</h4>
+            <ol>
+                <li><a href="#1.0">Introdução e Estrutura HTML</a></li>
+                    <ol>
+                        <li><a href="#1.1">Quais elementos básicos do HTML?</a></li>
+                        <li><a href="#1.2">Atributos e Tags</a></li>
+                    </ol><br>
+                <li><a href="#2.0">Texto e Formatação</a></li>
+                    <ol>
+                        <li><a href="#2.1">Parágrafos e Quebras de Linha</a></li>
+                        <li><a href="#2.2">Título de Hierarquia</a></li>
+                        <li><a href="#2.3">Citando e Destacando Texto</a></li>
+                        <li><a href="#2.4">Estilos de Texto</a></li>
+                    </ol><br>
+                <li><a href="#3.0">Listas e Aninhamento</a></li>
+                    <ol>
+                        <li><a href="#3.1">Listas não ordenadas</a></li>
+                        <li><a href="#3.2">Listas Ordendas</a></li>
+                        <li><a href="#3.3">Listas Aninhadas</a></li>
+                        <li><a href="#3.4">Listas de Definição</a></li>
+                        <li><a href="#3.5">Listas e Semântica</a></li>
+                    </ol><br>
+        
+                <li><a href="#4.0">Links e Âncoras</a></li>
+                    <ol>
+                        <li><a href="#4.1">Criando Links com a Tag 'a'</a></li>
+                        <li><a href="#4.2">Vinculando Páginas Internas e Externas</a></li>
+                        <li><a href="#4.3">Navegando com Âncoras</a></li>
+                        <li><a href="#4.4">Links de E-mail e Links para Download</a></li>
+                    </ol><br>
+        
+                <li><a href="#5.0">Imagens e Multimídia</a></li>
+                    <ol>
+                        <li><a href="#5.1">Inserindo Imagens com a Tag 'img'</a></li>
+                        <li><a href="#5.2">Especificando o Tamanho da Imagem</a></li>
+                        <li><a href="#5.3">Controles de Mídia e Opções Avançadas</a></li>
+                        <li><a href="#5.4">Mídia Incorporada de Terceiros</a></li>
+                    </ol><br>
+        
+                <li><a href="#6.0">Tabelas</a></li>
+                <ol>
+                    <li><a href="#6.1">Construindo Tabelas com a Tag 'table'</a></li>
+                    <li><a href="#6.2">Mesclando Células e Ajustando o Layout</a></li>
+                    <li><a href="#6.3">Cabeçalhos de Tabela e Escopos</a></li>
+                </ol><br>
+        
+                <li><a href="#7.0">Formulários e Entradas</a></li>
+                <ol>
+                    <li><a href="#7.1">Criando Formulários com a Tag 'form'</a></li>
+                    <li><a href="#7.2">Tipos de Entrada</a></li>
+                    <li><a href="#7.3">Enviando Dados para o Servidor</a></li>
+                    <li><a href="#7.4">Validação de Entrada</a></li>
+                </ol><br>
+        
+                <li><a href="#8.0">Elementos Semânticos</a></li>
+                <ol>
+                    <li><a href="#8.1">Qual a Importância dos Elementos Semânticos?</a></li>
+                    <li><a href="#8.2">Tags como 'header', 'nav', 'article' e 'footer'</a></li>
+                    <li><a href="#8.3">Melhorando a Acessibilidade e a Estrutura do Conteúdo</a></li>
+                </ol>
+            </ol>
+            <br>
+    </div>  
+
+    <h2 id="1.0">Introdução e Estrutura HTML</h2>
+        
+        <h3 id="1.1">Quais elementos básicos do HTML?</h3>
+
+        <ul>
+            <li>HTML é construído a partir de elementos, que são estruturas definidas por tags. As 
+                tags são cercadas por colchetes angulares (< >). Alguns elementos básicos são: </li>
+                    <ul>
+                        <li><h4>HTML</h4></li>
+                        <ul>
+                                <li>Define o início e o fim do documento HTML.</li>
+                                <li>A tag raiz, engloba todo o HTML. Ela envolve as tags <strong>'head' e 'body'</strong>.</li>
+                        </ul> 
+                        <li><h4>HEAD</h4></li>
+                        <ul>
+                            <li>Contém informações sobre o documento, como título, metadados e links para 
+                                arquivos externos.</li>
+                            <li>Aqui é onde você coloca metadados e informações sobre o documento,
+                                como o título da página, links para folhas de estilo CSS e outros recursos.</li>
+                        </ul>
+                        <li><h4>BODY</h4></li>
+                        <ul>
+                            <li> Contém todo o conteúdo visível na página, como texto, imagens e links. </li>
+                            <li>A taga que engloba todo conteúdo visível da sua página, como texto,
+                                imagens e outros elementos. É a parte da página que os usuários interagirão.</li>
+                        </ul>
+                    </ul>
+        </ul>
+
+        <h3 id="1.2">Atributos e Tags</h3>
+        <ul>
+            <li>
+                As tags HTML podem ter atributos, que fornecem informações adicionais sobre o elemento. Por exemplo,
+                a tag <strong>'a' (link)</strong> pode ter o atributo 'href' para indicar a URL do link. A tag <strong>'img'
+                (imagem) </strong>usa o atributo 'src' para especificar o caminho da imagem.
+            </li>
+        </ul>
+        <br>
+
+    <h2 id="2.0">Texto e Formatação</h2>
+        <h3 id="2.1">Parágrafos e Quebras de Linha</h3>
+            <ul>
+                <li>A tag <strong>'p'</strong> é usada para criar parágrafos de texto. Ela automaticamente insere
+                espaço em branco antes e depois do conteúdo, tornando o texto mais legível. Já a
+                tag <strong>'br'</strong>  é usada para criar uma quebra de linha dentro de um parágrafo, ideal para
+                separar linhas em endereços ou poesias.</li>
+            <ul>
+                <br>
+                <li><strong>'p': </strong> Este é um parágrafo.</li>
+                <li><strong>'br':</strong>Esta é uma quebra de linha.</li>
+            </ul>
+            </ul>
+
+        <h3 id="2.2">Título de Hierarquia</h3>
+            <ul>
+                <li>Os títulos são essenciais para estruturar o conteúdo da sua página. Eles vão desde
+                    'h1' até 'h6', sendo 'h1' o título mais importante e 'h6' o menos. Além de
+                    definir a hierarquia, os títulos também contribuem para a acessibilidade e o SEO,
+                    indicando a importância relativa do conteúdo.</li>
+                    <br>
+                    <ul id="tittlehi">
+                        <li><h3>Este é o um exemplo do 'h3.'</h3></li>
+                        <li><h4>Este é um exemplo do 'h4'.</h4></li>
+                        <li><h5>Este é um exemplo do 'h5'.</h5></li>
+                    </ul>
+            </ul>
+
+        <h3 id="2.3">Citando e Destacando Texto</h3>
+
+        <ul>
+            <li>As tags <strong>'blockquote' e 'q'</strong>  são usadas para citar textos. A primeira é utilizada 
+                para citações longas, enquanto a segunda para citações curtas, como frases. Além 
+                disso, a tag <strong>'mark'</strong>  pode ser usada para destacar parte do texto, como se você 
+                tivesse sublinhado com um marcador.</li>
+                <br>
+            <ul>
+                <li><blockquote><strong>Este é um exemplo de um 'blockquote'.</strong></blockquote></li>
+                <li><cite><strong>Este é um exemplo de 'cite'.</strong></cite></li>
+                <li><q><strong>Este é um exemplo de 'q'.</strong></q></li>
+            </ul>
+        </ul>
+
+        <h3 id="2.4">Estilos de Texto</h3>
+
+        <ul>
+            <li>O HTML também oferece diversas outras tags para estilizar o texto:</li>
+            <br>
+            <ul>
+                <li><strong>Este é um exemplo de 'strong'.</strong></li>
+                <li><em>Este é um exemplo de <strong>'em'</strong> .</em></li>
+                <li><u>Este é um exemplo de <strong>'u'</strong> .</u></li>
+                <li><s>Este é um exemplo de <strong>'s'</strong> .</s></li>
+                <li><sup>Este é um exemplo de <strong>'sup'</strong> .</sup></li> 
+                <li><sub>Este é um exemplo de <strong>'sub'</strong> .</sub></li>   
+            </ul>
+        </ul>
+
+    
+    <h2 id="3.0">Listas e Alinhamento</h2>
+    <ul>
+        <h3 id="3.1"><li>Listas não ordenadas:</li></h3>
+            <ul>
+                <li>As listas não ordenadas são ideais para representar itens que não têm uma
+                    sequência específica. Elas são criadas usando a tag <strong>'ul'</strong> , e cada item da lista é
+                    marcado com a tag <strong>'li'.</strong>  O navegador renderizará cada item com um marcador
+                    padrão, como um ponto ou um círculo.</li>
+            </ul>
+            <br>
+
+            <li id="3.2"><h3>Listas Ordendas:</h3></li> 
+            <ul>
+                <li>As listas ordenadas são usadas quando você deseja mostrar uma sequência de
+                    itens. Elas são semelhantes às listas não ordenadas, mas em vez de marcadores,
+                    os itens são numerados automaticamente. Use a tag <strong>'ol'</strong>  para criar uma lista
+                    ordenada e a tag <strong>'li'</strong> para cada item.</li>
+            </ul>
+            <br>
+
+            <li id="3.3"><h3>Listas Aninhadas:</h3></li>
+            <ul>
+                <li>
+                    As listas aninhadas permitem que você crie estruturas hierárquicas de informações.
+                    Você pode aninhar uma lista dentro de outra, usando a tag <strong>'ul'</strong>  ou <strong>'ol'</strong> para a lista
+                    externa e a tag <strong>'li'</strong>  para os itens externos e internos. Isso é útil para mostrar
+                    categorias e subcategorias, por exemplo. </li>
+            </ul>
+            <br>
+
+            <li id="3.4"><h3>Listas de Definição:</h3></li>
+            <ul>
+                <li>
+                    Além das listas não ordenadas e ordenadas, existe a lista de definição. Ela é criada 
+                    com a tag <strong>'dl'</strong> , que contém pares de termos <strong>('dt')</strong>  e suas definições <strong>('dd')</strong> . 
+                    Essas listas são frequentemente usadas para criar glossários ou explicações de 
+                    conceitos.
+                    <ul>
+                        <br>
+                        <strong><li>EXEMPLO:</li></strong>
+                        <dl>
+                                <dt>HTML</dt>
+                                <dd>Linguagem de marcação de hipertexto, usada para estruturar o conteúdo da web.</dd>
+
+                                <dt>CSS</dt>
+                                <dd>Cascadind Style Sheets, usado para estilizar o layout e a aparência do conteúdo HTML.</dd>
+
+                                <dt>JavaScript</dt>
+                                <dd>Linguagem de programação usada para adicionar interatividade e dinamismo às páginas da web.</dd>
+                        </dl>
+                    </ul>
+                </li>
+            </ul>
+    </ul>       
+
+        <h3 id="3.5">Listas e Semântica:</h3>
+
+        <ul>
+            <li>Ao usar listas corretamente, você também está adicionando significado semântico
+                ao seu conteúdo. Isso melhora a acessibilidade e a compreensão do conteúdo pelos
+                mecanismos de busca.</li>
+        </ul>
+
+    <h2 id="4.0">Links e Âncoras</h2>
+
+        <h3 id="4.1">Criando links com a Tag 'a'</h3>
+        <ul>
+            <li>A tag <strong>'a' (âncora)</strong>  é usada para criar links em HTML. Você pode usar essa tag para
+                vincular páginas internas e externas. O atributo href é utilizado para definir o destino
+                do link. Quando um usuário clica em um link, ele é direcionado para a URL
+                especificada.</li>
+        </ul>
+    
+        <h3 id="4.2">Vinculando Páginas Internas e Externas</h3>
+            <ul>
+                <li>Para vincular a uma página interna, como uma página em seu próprio site, você pode
+                    usar um caminho relativo, como pagina.html. Para vincular a uma página externa,
+                    como um site externo, você pode usar a URL completa, como
+                    https://www.exemplo.com.</li>
+                
+                <ul>
+                    <li><h4>Exemplo:</h4></li>
+                    <ul>
+                        <li>Página externa:</li>
+                        <ul>
+                            <!--<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML: Linguagem de Marcação de Hipertexto</a></li>-->
+                            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML: Linguagem de Marcação de Hipertexto</a></li>
+                        </ul>
+                        <li>Página Interna:</li>
+                        <ul>
+                            <!--<li><a href="http://127.0.0.1:5500/index.html">Link para página interna</a></li>-->
+                            <li><a href="http://127.0.0.1:5500/index.html" target="_blank" rel="noopener noreferrer">Link para página interna</a></li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+        
+        <h3 id="4.3">Navegando com Âncoras</h3>
+        <ul>
+            <li>Âncoras são elementos que permitem que os usuários naveguem para partes 
+                específicas de uma página. Você cria uma âncora atribuindo um valor ao atributo id 
+                de um elemento. Depois, você pode criar links para essa âncora usando o valor do 
+                atributo href com um # seguido do valor do id.</li>
+                <ul>
+                    <li><h4>Exemplo:</h4></li>
+                        <ul>
+                            <li><a href="#indice">ÍNDICE</a></li>
+                        </ul>
+                </ul>
+        </ul>
+
+        <h3 id="4.4">Links de E-mail e Links para Download</h3>
+        <ul>
+            <li>Além de vincular a páginas, você também pode criar links de e-mail usando a tag <strong>'a' </strong> 
+                com o atributo <strong>href="mailto:seuemail@example.com".</strong>  Da mesma forma, você pode 
+                criar links para download de arquivos, como PDFs, imagens ou documentos, usando 
+                o atributo href com o caminho do arquivo.</li>
+                <ul>
+                    <li><h4>Exemplo:</h4></li>
+                    <ul>
+                        <li>Entre em contato comigo: <a href="mailto:lucasdealmeidaborgesdominio@gmail.com">Enviar e-mail</a></li>
+                        <li>Faça o download do PDF base desta página: <a href="" download> Sem link para Download ;/ .</a></li>
+                    </ul>
+                </ul>
+        </ul>
+
+    <h2 id="5.0">Imagens e Multimídia</h2>
+
+        <h3 id="5.1">Inserindo Imagens com a Tag "img"</h3>
+        <ul>
+            <li>A tag <strong>'img'</strong>  é usada para exibir imagens em suas páginas. Você definirá o caminho
+                da imagem no atributo src e poderá especificar um texto alternativo usando o atributo
+                alt. Isso é fundamental para acessibilidade e também é exibido quando a imagem não
+                pode ser carregada.</li><br>
+
+            <img src="./img/UNIFEL.png" alt="UNIFEL" width="" height="">
+        </ul>
+
+        <h3 id="5.2">Especificando o Tamanho da Imagem</h3>
+        <ul>
+            <li>É possível controlar o tamanho da imagem com os atributos <strong>width (largura) e height
+                (altura)</strong> . É importante manter as proporções da imagem para que ela não fique
+                distorcida.</li><br>
+
+            <img src="https://neilpatel.com/wp-content/uploads/2017/12/codigos-html-para-paginas-web-700x467.jpeg" alt="coding" width="100" height="100">
+        </ul>
+
+        <h3 id="5.3">Controles de Mídia e Opções Avançadas</h3>
+        <ul>
+            <li>A tag <strong> 'video' e 'audio' </strong>permite que você adicione controles para que os usuários
+                possam reproduzir, pausar e ajustar o volume dos vídeos e áudios. Além disso, você
+                    pode definir opções avançadas, como <strong> loop (repetição), autoplay (reprodução
+                    automática) e mais.</strong> </li><br>
+                
+            <img src="./img/Codigo Midia.png" alt="comandos vídeo e áudio" height="250" width="600">
+        </ul>
+
+        <h3 id="5.4">Mídia Incorporada a Terceiros</h3>
+        <ul>
+            <li>Você pode incorporar conteúdo de plataformas externas, como vídeos do YouTube, 
+                utilizando códigos de incorporação fornecidos por essas plataformas. Isso permite 
+                que você insira facilmente conteúdo de alta qualidade em suas páginas</li>
+            <h4>Código:</h4>
+            
+            <img src="./img/Código Video Link.png" alt="codigo mídia incorporada" width="600" height="50">
+        </ul>
+
+    <h2 id="6.0">Tabelas</h2>
+
+        <h3 id="6.1">Construindo Tabelas com a Tag 'table'</h3>
+        <ul>
+            <li>Você definirá as linhas da tabela
+                com a tag <strong>'tr' (table row)</strong>  e as células com as tags <strong>'th' (table
+                    header) </strong> para cabeçalhos e <strong>'td' (table data)</strong>  para dados.</li>
+            <ul>
+                <li><h4>Exemplo:</h4></li>
+
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                    <tr>
+                        <th>Maria</th>
+                        <th>18 Anos</th>
+                        <th>Salvador, Bahia</th>
+                    </tr>
+                    <tr>
+                        <th>Lucas</th>
+                        <th>20 Anos</th>
+                        <th>Vitória da Conquista</th>
+                    </tr>
+                </table>
+            </ul>
+        </ul>
+
+        <h3 id="6.2">Mesclando Células e Ajustando o Layout</h3>
+        <ul>
+            <li>Você pode mesclar células de tabelas usando os atributos <strong> rowspan
+                (mesclagem de linhas) e colspan (mesclagem de colunas)</strong>. Isso é útil 
+                para criar células que abrangem várias linhas ou colunas. Além disso,
+                você pode ajustar o layout da tabela usando atributos como <strong>border, 
+                cellpadding e cellspacing.</strong> </li>
+                <ul>
+                    <li><h4>Exemplo:</h4></li>
+
+                    <table border="5" cellpadding="10" cellspacing="1">
+                        <tr>
+                            <th>Nome</th> 
+                            <th>Idade</th>
+                            <th>Cidade</th>
+                        </tr>
+                        <tr>
+                            <th>Maria</th>
+                            <th>18 Anos</th>
+                            <th>Salvador, Bahia</th>
+                        </tr>
+                        <tr>
+                            <th>Lucas</th>
+                            <th>20 Anos</th>
+                            <th>Vitória da Conquista</th>
+                        </tr>
+                    </table>
+                </ul>
+        </ul>
+
+        <h3 id="6.3">Cabeçalhos de Tabela e Escopos</h3>
+        <ul>
+            <li>A tag <strong>'th'</strong>  é usada para criar cabeçalhos de tabela. Você pode usar o atributo scope
+                para indicar se o <strong> cabeçalho se aplica a uma coluna (col) ou a uma linha (row),
+                    melhorando a acessibilidade.</strong></li>
+
+            <ul>
+                <li><h4>Exemplo:</h4></li>
+
+                <table border="5">
+                    <tr>
+                        <th></th>
+                        <th scope="col">Segunda-Feira</th>
+                        <th scope="col">Terça-Feira</th>
+                        <th scope="col">Quarta-Feira</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Manhã</th>
+                        <td>Café</td>
+                        <td>Chá</td>
+                        <td>Suco</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tarde</th>
+                        <td>Energético</td>
+                        <td>Refri</td>
+                        <td>Cerveja</td>
+                    </tr>
+                </table>
+            </ul>
+        </ul>
+
+    <h2 id="7.0">Formulários e Entradas</h2>
+        
+        <h3 id="7.1">Criando Formulários com a Tag 'form'</h3>
+        <ul>
+            <li>A tag <strong>'form'</strong>  é usada para criar formulários em HTML. Ela envolve elementos de
+                entrada e define a ação que será executada ao enviar o formulário. O atributo <strong>action
+                    especifica o URL para o processamento do formulário</strong>  e os métodos <strong> GET e POST
+                        determinam como os dados do formulário serão enviados</strong>.</li>
+        </ul>
+
+        <h3 id="7.2">Tipos de Entrada</h3>
+        <ul>
+            <li>Existem vários tipos de elementos de entrada que você pode adicionar aos
+                formulários, <strong>como 'input', 'textarea', 'select', entre outros</strong> . O elemento 'input' é
+                especialmente versátil, permitindo que você crie campos de texto, botões de rádio,
+                caixas de seleção e mais.</li>
+        </ul>
+
+        <h3 id="7.3">Enviando Dados para o Servidor</h3>
+        <ul>
+            <li>Ao enviar um formulário, os dados inseridos pelos usuários podem ser enviados
+            para um servidor web. <strong>O método GET anexa os dados ao URL da ação, enquanto o
+            método POST envia os dados de forma mais segura e independente do URL.</strong> </li>
+        </ul>
+
+        <h3 id="7.4">Validação de Entrada</h3>
+        <ul>
+            <li>Você pode adicionar validações aos campos de entrada para garantir que os dados 
+                fornecidos pelos usuários estejam no formato correto. Isso ajuda a evitar erros e 
+                melhorar a qualidade dos dados enviados</li>
+        </ul>
+
+        <ul>
+            <ul>
+                <li><h4>Exemplo:</h4></li> 
+
+                <form action="/enviar-dados" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem" cols="50" rows="4"></textarea><br><br>
+                </form>
+            </ul>
+        </ul>
+
+    <h2 id="8.0">Elementos Semânticos</h2>
+        
+        <h3 id="8.1">Qual a importância dos Elementos Semânticos?</h3>
+        <ul>
+            <li>Os elementos semânticos em HTML são tags que têm significados específicos para
+                os navegadores e mecanismos de busca. Eles descrevem o conteúdo de uma
+                página de forma mais precisa, tornando-a mais compreensível tanto para humanos
+                quanto para máquinas.</li>
+        </ul>
+
+        <h3 id="8.2">Tags como 'header', 'nav', 'article' e 'footer'</h3>
+        <ul>
+            <li>A tag <strong>'header'</strong>  representa o cabeçalho da página ou de uma seção específica,
+                contendo elementos como logotipos, títulos e informações de navegação.</li>
+            <li>A tag <strong>'nav'</strong> é usada para definir uma seção de navegação, normalmente
+                contendo links para outras páginas ou partes do site.</li>
+            <li>A tag <strong>'article'</strong>  é utilizada para envolver um conteúdo independente e autocontido,
+                como postagens de blog, notícias ou histórias.</li>
+            <li>A tag <strong>'footer'</strong>  representa o rodapé da página ou de uma seção, contendo
+                informações de direitos autorais, links úteis e outros detalhes.</li>
+        </ul>
+
+        <h3 id="8.3">Melhorando a Acessibilidade e a Estrutura do Conteúdo</h3>
+        <ul>
+            <li>O uso adequado de elementos semânticos não apenas melhora a compreensão do 
+                conteúdo pelos motores de busca, mas também contribui para uma melhor 
+                acessibilidade. Leitores de tela e outros dispositivos auxiliares podem utilizar essas 
+                tags para compreender a estrutura e o significado do conteúdo, tornando-o mais 
+                acessível a pessoas com deficiências visuais.</li>
+        </ul>
+</body>
+</html>
