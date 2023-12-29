@@ -12,8 +12,14 @@ body
     background-color: black;
     color:aliceblue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: block;
 }
+
+#alltext
+{
+    width: 90%;
+    margin: auto;
+}
+
 a
 {
 color: rgb(46, 155, 192);
@@ -30,7 +36,7 @@ strong
     justify-content: center;
     text-align: center;
     text-shadow: #000 2px 2px 0.2rem;
-    color: aliceblue;
+    color: aliceblue;   
 }
 #eu
 {
@@ -42,6 +48,27 @@ text-align: right;
 #indice
 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-size: small;
+}
+h2
+{
+    text-align: center;
+    background-color: rgb(19, 212, 212);
+    line-height:110%;
+    color: rgb(72, 120, 122);
+    border-radius: 200%;
+}
+h3
+{
+    max-width:fit-content;  
+    background-color: rgb(19, 212, 212);
+    color: rgb(72, 120, 122);
+}
+.default
+{
+    text-align: justify;
+    background-color: black;
+    color:aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

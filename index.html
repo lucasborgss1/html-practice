@@ -9,7 +9,7 @@
     <link rel="icon" href="./img/logohtml.png" type="image/x-icon"> <!--Ícones pequenos exibidos na aba do navegador-->
 </head>
 <body>
-
+    <div id="alltext">
     <header>
         <h1 class="logo">Aprendendo HTML e CSS (basics)</h1>
       </header>
@@ -22,7 +22,7 @@
     
       <div id="indice">
         <h4>ÍNDICE:</h4>
-            <ol>
+            <ol><br><br><br>
                 <li><a href="#1.0">Introdução e Estrutura HTML</a></li>
                     <ol>
                         <li><a href="#1.1">Quais elementos básicos do HTML?</a></li>
@@ -85,6 +85,7 @@
             <br>
     </div>  
 
+
     <h2 id="1.0">Introdução e Estrutura HTML</h2>
         
         <h3 id="1.1">Quais elementos básicos do HTML?</h3>
@@ -146,7 +147,7 @@
                     indicando a importância relativa do conteúdo.</li>
                     <br>
                     <ul id="tittlehi">
-                        <li><h3>Este é o um exemplo do 'h3.'</h3></li>
+                        <li><h3 class="default">Este é o um exemplo do 'h3.'</h3></li>
                         <li><h4>Este é um exemplo do 'h4'.</h4></li>
                         <li><h5>Este é um exemplo do 'h5'.</h5></li>
                     </ul>
@@ -183,7 +184,7 @@
         </ul>
 
     
-    <h2 id="3.0">Listas e Alinhamento</h2>
+    <h2 id="3.0">Listas e Aninhamento</h2>
     <ul>
         <h3 id="3.1"><li>Listas não ordenadas:</li></h3>
             <ul>
@@ -390,7 +391,7 @@
                 <ul>
                     <li><h4>Exemplo:</h4></li>
 
-                    <table border="5" cellpadding="10" cellspacing="1">
+                    <table  border="5" cellpadding="10" cellspacing="1">
                         <tr>
                             <th>Nome</th> 
                             <th>Idade</th>
@@ -478,7 +479,7 @@
             <ul>
                 <li><h4>Exemplo:</h4></li> 
 
-                <form action="/enviar-dados" method="post">
+                <form class="textimg" action="/enviar-dados" method="post">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required><br><br>
 
@@ -521,5 +522,7 @@
                 tags para compreender a estrutura e o significado do conteúdo, tornando-o mais 
                 acessível a pessoas com deficiências visuais.</li>
         </ul>
+
+    </div>
 </body>
 </html>
